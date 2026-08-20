@@ -1,0 +1,31 @@
+:root {
+  color-scheme: light;
+  --sun-paper: #f3f2eb;
+  --sun-surface: #fffefa;
+  --sun-ink: #1d1d18;
+  --sun-muted: #706e64;
+  --sun-line: #dfdccf;
+  --sun-grid: #ebe8dc;
+  --sun-low: #513b00;
+  --sun-moderate: #a98500;
+  --sun-high: #f1cf00;
+  --sun-highlight: #fff7c9;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 78% 0%, rgba(241, 207, 0, .11), transparent 27rem),
+    var(--sun-paper);
+  color: var(--sun-ink);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid rgba(241, 207, 0, .8);
+  outline-offset: 2px;
+}

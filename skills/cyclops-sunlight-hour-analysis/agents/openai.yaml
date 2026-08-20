@@ -1,0 +1,11 @@
+interface:
+  display_name: "Cyclops Sunlight Hour Analysis"
+  short_description: "Run gated Cyclops floorplate analysis and dashboards"
+  brand_color: "#F1CF00"
+  default_prompt: "Use $cyclops-sunlight-hour-analysis to analyze my floorplates and create the English sunlight dashboard."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "rhino"
+      description: "Official McNeel RhinoMCP connection for Rhino and Grasshopper control"
